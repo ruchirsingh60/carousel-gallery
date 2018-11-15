@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Ropa-Sans-Regular;
+    src: url("/assets/font/RopaSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Ropa-Sans-Italic;
+    src: url("/assets/font/RopaSans-Italic.ttf") format("truetype");
+}

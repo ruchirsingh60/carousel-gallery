@@ -20,6 +20,7 @@
 
 .alignCenter{
     text-align: center;
+    font-family: Ropa-Sans-Italic;
 }
 
 .imageDimension{
@@ -34,10 +35,12 @@
 }
 
 .imgText{
+    font-family: Ropa-Sans-Italic;
     float:left;
 }
 
 .imgLike{
+    font-family: Ropa-Sans-Regular;
     float:right;
 }
 
