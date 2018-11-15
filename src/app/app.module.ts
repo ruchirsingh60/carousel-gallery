@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CarousalModuleComponent } from './carousal-module/carousal-module.component';
 import { HttpModule } from '@angular/http';
+import {ApiCallsService} from './api-calls.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { HttpModule } from '@angular/http';
     BrowserModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ApiCallsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

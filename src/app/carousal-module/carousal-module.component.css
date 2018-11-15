@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+  background-color: #00FFFF;
+}
+
+.column {
+    float: left;
+    width: 16%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.imageDimension{
+    height: 200px;
+    width: 100%;
+}
+
+.border-center{
+    padding:1px;
+   border:4px solid #021a40;
+   background-color:#ff0;
+}
+
+.imgText{
+    float:left;
+}
+
+.imgLike{
+    float:right;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
