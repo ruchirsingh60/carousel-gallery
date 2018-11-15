@@ -1,3 +1,19 @@
-<p>
-  carousal-module works!
-</p>
+<div class="container-fluid">
+<h2 class="alignCenter"><u>Image Slider</u></h2>
+
+<div class="row">
+  <div class="column col-xs-12" *ngFor="let images of carousalData; index as i">
+  	<div [ngClass]="{'border-center': i==3}">
+    	<img src="{{images.largeImageURL}}" class="imageDimension">
+    </div>
+    <span class="imgText">{{images.user}}</span>
+    <span class="imgLike">{{images.likes}}</span>
+  </div>
+</div>
+
+
+<div class="alignCenter">
+	<button class="btn btn-primary">Prev</button>
+	<button class="btn btn-primary">Next</button>
+</div>
+</div>
