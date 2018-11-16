@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ApiCallsService} from '../api-calls.service';
 
 @Component({
-  selector: 'app-carousal-module',
-  templateUrl: './carousal-module.component.html',
-  styleUrls: ['./carousal-module.component.css']
+  selector: 'app-carousel-module',
+  templateUrl: './carousel-module.component.html',
+  styleUrls: ['./carousel-module.component.css']
 })
-export class CarousalModuleComponent implements OnInit {
+export class CarouselModuleComponent implements OnInit {
 
   carousalData:any[]=[];
   allresData:any[]=[];

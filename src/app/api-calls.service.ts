@@ -7,9 +7,11 @@ import { map, filter, scan } from 'rxjs/operators';
 })
 export class ApiCallsService {
 
+	//Define the URL to be used
 	BASE_URL :String="https://pixabay.com/api";
 	resourceKeyUrl:string;
 
+	//create instance of Http
   	constructor(private http:Http) { }
 
   	//set account's key
@@ -17,7 +19,7 @@ export class ApiCallsService {
 		this.resourceKeyUrl=keydata;
   	}
 
-  	//service to get the image from pixbay server
+  	//service to get the image from pixbay server, params will get the Image's category
   	getMethod(params) {
 	  const url = this.BASE_URL + "/" + this.resourceKeyUrl + params;
 	  return this.http
